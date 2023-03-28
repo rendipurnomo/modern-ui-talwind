@@ -1,8 +1,11 @@
 .gpt3__navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
+  z-index: 9999;
 }
 
 .gpt3__navbar-links {
@@ -44,6 +47,14 @@
   margin: 0 1rem;
   cursor: pointer;
 }
+.gpt3__navbar-links_container p:hover {
+  color: #ff4820;
+}
+.gpt3__navbar-sign p:hover {
+  color: #ff4820;
+}
+
+
 
 .gpt3__navbar-sign button,
 .gpt3__navbar-menu_container button {
@@ -135,4 +146,13 @@
   .gpt3__navbar-menu_container-links-sign {
     display: block;
   }
+}
+
+.gpt3__navbar.navbar-sticky {
+  background: var(--color-footer);
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }

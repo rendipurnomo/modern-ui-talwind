@@ -9,6 +9,7 @@
     align-items: flex-start;
     flex-direction: column;
     margin-right: 5rem;
+    margin-top: 3rem;
 }
 
 .gpt3__header-content h1 {
@@ -114,7 +115,7 @@
         flex-direction: column;
     }
     .gpt3__header-content {
-        margin: 0 0 3rem;
+        margin: 3rem 0 3rem;
     }
 }
 

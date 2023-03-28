@@ -26,9 +26,20 @@ const Menu = () => (
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [Sticky, setSticky] = useState(false);
+
+  function setFixed() {
+    if (window.scrollY >= 80) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  }
+
+  window.addEventListener("scroll", setFixed);
 
   return (
-    <div className="gpt3__navbar">
+    <div className={Sticky ? "gpt3__navbar navbar-sticky" : "gpt3__navbar"}>
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
           <img src={logo} alt="logo" />
